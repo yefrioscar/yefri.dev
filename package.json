@@ -8,12 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.1",
+    "framer-motion": "^4.1.17",
+    "next": "^10.2.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.9.6"
+    "tailwindcss": "^2.2.4"
   }
 }

@@ -6,8 +6,24 @@
 
 body, html, * {
   box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  @apply bg-background;
 }
 
 .wrapper-container {
-  @apply max-w-5xl bg-red-300 m-auto px-4;
+  @apply max-w-5xl m-auto px-4;
+}
+
+.example-container div {
+  background: white;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+.input-container {
+  @apply w-80 rounded bg-backgroundInput pl-2 h-10 hover:ring-2 focus:ring-2 outline-none ring-primary-400 placeholder-gray-400 text-white;
 }
