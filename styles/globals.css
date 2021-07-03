@@ -25,5 +25,5 @@ body {
 }
 
 .input-container {
-  @apply w-80 rounded bg-backgroundInput pl-2 h-10 hover:ring-2 focus:ring-2 outline-none ring-primary-400 placeholder-gray-400 text-white;
+  @apply w-full rounded bg-backgroundInput pl-2 h-10 hover:ring-2 focus:ring-2 outline-none ring-primary-400 placeholder-gray-400 text-white md:w-80;
 }

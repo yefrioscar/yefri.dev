@@ -1,8 +1,26 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-export default (req, res) => {
-  res.statusCode = 200
+import { apiInstance, createContact } from "../../utils/api/sendinblue"
 
-  
-  res.json({ name: 'John Doe' })
+export default async (req, res) => {
+  const { body } = req;
+  const { email } = JSON.parse(body)
+
+  try {
+    let result = await apiInstance.createContact({ ...createContact, email, listIds: [5] });
+    console.log('API called successfully. Returned data: ' + JSON.stringify(result));
+
+    res.statusCode = 200
+    res.json({ name: 'John Doe' })
+  } catch (error) {
+    console.log(error);
+    let { code } = error.response.body;
+    console.log(body)
+
+    if(code === 'duplicate_parameter') {
+      res.status(200).json({ error: 'duplicate_parameter' })
+    } else {
+      res.status(400).json({ error: 'not_found' })
+    }
+  } 
 }

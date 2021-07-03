@@ -12,7 +12,9 @@
     "framer-motion": "^4.1.17",
     "next": "^10.2.3",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "sib-api-v3-sdk": "^8.2.0",
+    "swr": "^0.5.6"
   },
   "devDependencies": {
     "postcss-preset-env": "^6.7.0",
