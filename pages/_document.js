@@ -5,8 +5,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Yefri</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          
+          
         </Head>
         <body className="loading">
           <Main />

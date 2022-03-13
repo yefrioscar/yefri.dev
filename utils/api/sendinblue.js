@@ -7,7 +7,9 @@ apiKey.apiKey = process.env.API_KEY_SENDINBLUE;
 
 var apiInstance = new SibApiV3Sdk.ContactsApi();
 let createContact = new SibApiV3Sdk.CreateContact();
+let transactionalEmailsApi = new SibApiV3Sdk.TransactionalEmailsApi();
 
 
 module.exports.createContact = createContact;
 module.exports.apiInstance = apiInstance;
+module.exports.transactionalEmailsApi = transactionalEmailsApi;

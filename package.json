@@ -10,9 +10,9 @@
   "dependencies": {
     "clsx": "^1.1.1",
     "framer-motion": "^4.1.17",
-    "next": "^10.2.3",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "next": "^12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "sib-api-v3-sdk": "^8.2.0",
     "swr": "^0.5.6"
   },
